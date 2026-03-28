@@ -1,18 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aditya Singh Tomar — DevOps Portfolio</title>
+
+<style>
+    /* --------- Global --------- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        color: #fff;
+        min-height: 100vh;
+    }
+    a { text-decoration: none; }
+
+    /* --------- Glass Card --------- */
+    .glass {
+        backdrop-filter: blur(15px);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 2rem;
+        transition: 0.5s ease;
+    }
+    .glass:hover {
+        transform: translateY(-8px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    /* --------- Sections --------- */
+    .container { width: 90%; margin: 3rem auto; }
+    header {
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    header p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    /* --------- Buttons --------- */
+    .btn {
+        display: inline-block;
+        padding: 0.8rem 1.8rem;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        margin-top: 1rem;
+    }
+    .btn:hover {
+        background: #fff;
+        color: #000;
+        transform: scale(1.05);
+    }
+
+    /* --------- Skills --------- */
+    .grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin-top: 2rem;
+    }
+
+    .skill-card {
+        text-align: center;
+        padding: 1.6rem;
+    }
+    .skill-card img {
+        width: 80px;
+        margin-bottom: 1rem;
+    }
+
+    /* --------- Footer --------- */
+    footer {
+        text-align: center;
+        margin-top: 4rem;
+        padding: 2rem 0;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+</style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a sample paragraph created with HTML.</p>
-    
-    <!-- Link to another site -->
-    <a href="https://www.w3schools.com">Visit W3Schools for more tutorials</a>
-    
-    <!-- Example of an image -->
-    <img src="image.jpg" alt="Description of image" width="300">
+
+<!-- Hero Section -->
+<header class="container glass">
+    <h1>Hi 👋 I'm Aditya Singh Tomar</h1>
+    <p>DevOps Enthusiast & Cloud Automation Specialist</p>
+    <a href="https://github.com/Aditya09-cse" class="btn" target="_blank">View GitHub</a>
+    <a href="#projects" class="btn">Explore Projects</a>
+</header>
+
+<!-- About Me -->
+<section id="about" class="container glass">
+    <h2>About Me</h2>
+    <p>
+        I'm passionate about DevOps, cloud infrastructure and automation. I build
+        scalable CI/CD pipelines with GitHub Actions, deploy on AWS and automate
+        workflows using containers & tools like Docker, Kubernetes, Terraform,
+        Shell, and Python. :contentReference[oaicite:2]{index=2}
+    </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="container">
+    <h2>Tech Skills</h2>
+    <div class="grid">
+        <div class="glass skill-card">
+            <img src="assets/aws.png" alt="AWS" />
+            <h4>AWS Cloud</h4>
+        </div>
+        <div class="glass skill-card">
+            <img src="assets/docker.png" alt="Docker" />
+            <h4>Docker</h4>
+        </div>
+        <div class="glass skill-card">
+            <img src="assets/k8s.png" alt="Kubernetes" />
+            <h4>Kubernetes</h4>
+        </div>
+        <div class="glass skill-card">
+            <img src="assets/terraform.png" alt="Terraform" />
+            <h4>Terraform</h4>
+        </div>
+        <div class="glass skill-card">
+            <img src="assets/github-actions.png" alt="GitHub Actions" />
+            <h4>GitHub Actions</h4>
+        </div>
+        <div class="glass skill-card">
+            <img src="assets/python.png" alt="Python" />
+            <h4>Python</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="container">
+    <h2>Featured Projects</h2>
+    <div class="grid">
+        <!-- Project 1 -->
+        <div class="glass">
+            <h3>DevOps CI/CD Lab</h3>
+            <p>20+ workflows, automation pipelines and security scans.</p>
+            <a href="https://github.com/Aditya09-cse/devops-ci-cd-pipeline-lab" class="btn" target="_blank">
+                View Repo
+            </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass">
+            <h3>Dockerized Monitoring App</h3>
+            <p>System health monitor deployed on AWS EC2 with Docker setup.</p>
+            <a href="https://github.com/Aditya09-cse/dockerized-system-health-monitor-on-aws" class="btn" target="_blank">
+                View Repo
+            </a>
+        </div>
+
+        <!-- Additional repo -->
+        <div class="glass">
+            <h3>90 Days Of DevOps</h3>
+            <p>Challenge participation for hands-on DevOps growth.</p>
+            <a href="https://github.com/Aditya09-cse/90DaysOfDevOps" class="btn" target="_blank">
+                View Repo
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Made with ❤️ by Aditya | © 2026</p>
+    <a href="#top" class="btn">Back to Top</a>
+</footer>
+
 </body>
 </html>
